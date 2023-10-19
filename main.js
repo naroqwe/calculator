@@ -8,36 +8,22 @@ const deleteButton = document.querySelector(".delete");
 
 let firstVal;
 let secondVal;
-let lastVal;
 let mathSign;
 
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     addToDisplay(button.textContent);
-    lastVal = button.textContent;
-    console.log(lastVal);
+    firstVal = Number(result.innerHTML);
+    console.log(firstVal);
   });
 });
 
 signOperator.forEach((sign) => {
-  sign.addEventListener("click", () => {
-    // console.log(sign.textContent);
-    addToDisplay(sign.textContent);
-    mathSign = sign.textContent;
-    console.log(mathSign);
-  });
+  sign.addEventListener("click", () => {});
 });
 
 function addToDisplay(number) {
-  let numberOnScreen = result.innerHTML;
-  if (numberOnScreen.length > 13) {
-    result.innerHTML = null;
-  } else {
-    result.innerHTML += parseInt(number);
-    console.log(typeof number);
-  }
-  clearButton.addEventListener("click", () => {
-    result.innerHTML = null;
-  });
+  result.innerHTML += number;
 }
-equalSign.addEventListener("click", function () {});
+
+//push to values array, then extract them and calculate
