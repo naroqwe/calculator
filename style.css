@@ -45,9 +45,9 @@ body {
   cursor: pointer;
 }
 
-.delete {
+/* .delete {
   grid-column: span 2;
-}
+} */
 .clear {
-  grid-column: span 2;
+  grid-column: span 4;
 }
