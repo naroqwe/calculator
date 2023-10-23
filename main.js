@@ -20,9 +20,9 @@ function asd() {
     return;
   }
 
-  // if (mathSign.innerHTML !== "") {
-  //   operate();
-  // }
+  if (mathSign.innerHTML !== "") {
+    operate();
+  }
 
   secondNumber.innerHTML = firstNumber.innerHTML;
   mathSign.innerHTML += this.textContent;
