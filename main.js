@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll(".number");
-const dot = document.querySelector(".dot");
+
 const equalSign = document.querySelector(".equals");
 const signOperator = document.querySelectorAll(".sign");
 
@@ -12,6 +12,8 @@ const deleteButton = document.querySelector(".delete");
 let result = "";
 
 function addToDisplay() {
+  if (this.textContent === "." && firstNumber.innerHTML.includes(".")) return;
+
   firstNumber.innerHTML += this.textContent;
 }
 
